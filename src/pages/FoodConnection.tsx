@@ -1,7 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Utensils, Coffee, Pizza, Salad, Wine } from "lucide-react";
+import { Utensils, Coffee, Pizza, Salad, Wine, Facebook, Instagram } from "lucide-react";
 
 const FoodConnection = () => {
   const services = [
@@ -21,9 +21,9 @@ const FoodConnection = () => {
       description: "Comprehensive marketing strategies tailored for restaurants and food businesses."
     },
     {
-      icon: <Coffee className="h-12 w-12 text-food" />,
-      title: "Viral Food Content",
-      description: "Creating engaging food content designed to go viral on social media platforms."
+      icon: <Instagram className="h-12 w-12 text-food" />, 
+      title: "Social Media Setup",
+      description: "Complete setup and optimization of your social media profiles to enhance your online presence."
     }
   ];
 
@@ -57,14 +57,14 @@ const FoodConnection = () => {
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-orange-50 to-orange-100 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-food mb-6">MATANGI Food Connection</h1>
+            <h1 className="text-4xl font-bold text-food mb-6">Food Connection</h1>
             <p className="text-lg text-gray-700">
-            Matangi Consultancy helps food brands grow through social media marketing, influencer collaborations, and digital strategies—connecting you with the right audience and boosting your business visibility and sales.
+              Matangi Consultancy helps food brands grow through social media marketing, influencer collaborations, and digital strategies—connecting you with the right audience and boosting your business visibility and sales.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const FoodConnection = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Food Marketing Services</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
@@ -93,7 +93,7 @@ const FoodConnection = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Food Content</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Featured Item 1 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -104,7 +104,7 @@ const FoodConnection = () => {
                 <p className="text-gray-600">Showcasing the vibrant street food culture with authentic stories.</p>
               </div>
             </div>
-            
+
             {/* Featured Item 2 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 bg-gray-300"></div>
@@ -114,7 +114,7 @@ const FoodConnection = () => {
                 <p className="text-gray-600">Elegant photography highlighting gourmet cuisine and fine dining experiences.</p>
               </div>
             </div>
-            
+
             {/* Featured Item 3 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 bg-gray-300"></div>
@@ -132,7 +132,7 @@ const FoodConnection = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Food Connection Services</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div key={index} className="p-6 border border-gray-200 rounded-lg hover:border-food hover:shadow-md transition-all">
@@ -148,23 +148,23 @@ const FoodConnection = () => {
       <section className="py-16 bg-food text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Impact in Numbers</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold mb-2">500+</div>
+              <div className="text-5xl font-bold mb-2">15+</div>
               <p className="text-lg">Food Videos Produced</p>
             </div>
-            
+
             <div>
-              <div className="text-5xl font-bold mb-2">100M+</div>
+              <div className="text-5xl font-bold mb-2">5k+</div>
               <p className="text-lg">Total Video Views</p>
             </div>
-            
+
             <div>
               <div className="text-5xl font-bold mb-2">50+</div>
               <p className="text-lg">Restaurant Partners</p>
             </div>
-            
+
             <div>
               <div className="text-5xl font-bold mb-2">25+</div>
               <p className="text-lg">Viral Campaigns</p>
@@ -178,12 +178,12 @@ const FoodConnection = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-10">What Our Clients Say</h2>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="h-16 w-16 bg-gray-300 rounded-full mx-auto mb-6"></div>
               <p className="text-gray-600 italic mb-6 text-lg">
-                "The MATANGI Food Connection team transformed our restaurant's online presence. 
-                Their food photography and video content has helped us attract new customers 
+                "The MATANGI Food Connection team transformed our restaurant's online presence.
+                Their food photography and video content has helped us attract new customers
                 and keep our social media channels vibrant and engaging."
               </p>
               <div className="font-bold">Priya Sharma</div>
@@ -194,7 +194,7 @@ const FoodConnection = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-food mb-6">Ready to Elevate Your Food Business?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
@@ -204,7 +204,7 @@ const FoodConnection = () => {
             Schedule a Tasting Session
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

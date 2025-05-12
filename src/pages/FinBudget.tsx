@@ -1,43 +1,59 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Building, House, MapPinHouse, LandPlot } from "lucide-react";
+import { LineChart, PieChart, Repeat, TrendingUp, UserPlus } from "lucide-react";
+import dreamLogo from '../assets/dream-capital-2.png';
 
-const RealEstate = () => {
+const FinBudget = () => {
   const services = [
     {
-      icon: <House className="h-12 w-12 text-realestate" />,
-      title: "Residential Properties",
-      description: "Find your dream home with our extensive portfolio of residential properties."
+      icon: <UserPlus className="h-12 w-12 text-realestate" />,
+      title: "Demat Account Opening",
+      description: "Easily open a Demat account to start your journey in the stock market with expert support."
     },
     {
-      icon: <Building className="h-12 w-12 text-realestate" />,
-      title: "Commercial Spaces",
-      description: "Premium commercial spaces for businesses of all sizes in prime locations."
+      icon: <TrendingUp className="h-12 w-12 text-realestate" />,
+      title: "Pre-IPO Investment",
+      description: "Get early access to high-potential companies before they go public with pre-IPO investment options."
     },
     {
-      icon: <LandPlot className="h-12 w-12 text-realestate" />,
-      title: "Land Development",
-      description: "Strategic land acquisition and development services for investment purposes."
+      icon: <PieChart className="h-12 w-12 text-realestate" />,
+      title: "Mutual Funds",
+      description: "Diversify your portfolio with expertly selected mutual fund schemes tailored to your goals."
     },
     {
-      icon: <MapPinHouse className="h-12 w-12 text-realestate" />,
-      title: "Property Management",
-      description: "Comprehensive property management services to maximize your investment returns."
+      icon: <Repeat className="h-12 w-12 text-realestate" />,
+      title: "Systematic Investment Plan (SIP)",
+      description: "Build wealth consistently over time with disciplined, hassle-free SIP investments."
+    },
+    {
+      icon: <LineChart className="h-12 w-12 text-realestate" />,
+      title: "Stock Advisory",
+      description: "Receive reliable stock recommendations and market insights from experienced analysts."
     }
+
   ];
 
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-50 to-green-100 py-16">
+      <div className="bg-gradient-to-r from-green-50 to-green-100 py-16 pt-0">
+
+        {/* Logo */}
+        <img
+          src={dreamLogo}
+          alt="Matangi Consultancy Logo"
+          className="mx-auto h-26  max-w-[200px]"
+        />
+
         <div className="container mx-auto px-4">
+
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-realestate mb-6">MATANGI Fin Budget Analysis</h1>
+            <h1 className="text-4xl font-bold text-realestate mb-6">Fin Budget Analysis</h1>
             <p className="text-lg text-gray-700">
-            Matangi Consultancy provides personalized financial advisory services, including guidance on stock markets, mutual funds, personal finance, investment planning, and gold trading—helping you build wealth with confidence.
+              Matangi Consultancy provides personalized financial advisory services, including guidance on stock markets, mutual funds, personal finance, investment planning, and gold trading—helping you build wealth with confidence.
 
             </p>
           </div>
@@ -47,11 +63,23 @@ const RealEstate = () => {
       {/* Services Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Real Estate Services</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
+          <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Render first 4 services in 2 columns */}
+            {services.slice(0, 4).map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="flex justify-center mb-4">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-realestate">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+            ))}
+
+            {/* Render last service, centered in the second column */}
+            {services.slice(4, 5).map((service, index) => (
+              <div key={index + 4} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow col-span-2  mx-auto">
                 <div className="flex justify-center mb-4">
                   {service.icon}
                 </div>
@@ -63,11 +91,12 @@ const RealEstate = () => {
         </div>
       </section>
 
+
       {/* Featured Properties */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Properties</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Property 1 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -81,7 +110,7 @@ const RealEstate = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Property 2 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 bg-gray-300"></div>
@@ -94,7 +123,7 @@ const RealEstate = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Property 3 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 bg-gray-300"></div>
@@ -108,12 +137,12 @@ const RealEstate = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center mt-10">
+
+          {/* <div className="text-center mt-10">
             <button className="bg-realestate hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
               View All Properties
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -121,34 +150,34 @@ const RealEstate = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Real Estate Services</h2>
-            
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Financial Budget Analysis Services</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-realestate">Quality Assurance</h3>
+                <h3 className="text-xl font-bold mb-3 text-realestate">Accurate Financial Planning</h3>
                 <p className="text-gray-600">
-                  All our properties undergo rigorous quality checks to ensure the highest standards.
+                  We ensure precise budget analysis by considering all financial factors to help you make informed decisions.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-realestate">Strategic Locations</h3>
+                <h3 className="text-xl font-bold mb-3 text-realestate">Cost-Effective Solutions</h3>
                 <p className="text-gray-600">
-                  Properties in prime locations with excellent connectivity and amenities.
+                  Our approach provides cost-effective strategies to optimize your financial resources for maximum impact.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-realestate">Transparent Dealings</h3>
+                <h3 className="text-xl font-bold mb-3 text-realestate">Detailed Reporting</h3>
                 <p className="text-gray-600">
-                  Clear documentation and transparent processes throughout the transaction.
+                  We offer clear, detailed reports to give you a complete overview of your financial budget and projections.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-realestate">After-Sale Support</h3>
+                <h3 className="text-xl font-bold mb-3 text-realestate">Ongoing Support and Guidance</h3>
                 <p className="text-gray-600">
-                  Dedicated support team to address any concerns after property acquisition.
+                  Our team provides continuous support to help you navigate any budget-related challenges and ensure long-term success.
                 </p>
               </div>
             </div>
@@ -156,8 +185,9 @@ const RealEstate = () => {
         </div>
       </section>
 
+
       {/* Call to Action */}
-      <section className="py-16 bg-realestate text-white">
+      {/* <section className="py-16 bg-realestate text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Find Your Perfect Property?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -167,11 +197,11 @@ const RealEstate = () => {
             Contact Our Experts
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>
   );
 };
 
-export default RealEstate;
+export default FinBudget;

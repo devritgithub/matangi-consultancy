@@ -1,7 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Globe, Share, Instagram, Facebook, Youtube } from "lucide-react";
+import { Globe, Share, Instagram, Facebook, Youtube, Palette } from "lucide-react";
 
 const LinkCreation = () => {
   const services = [
@@ -16,13 +16,13 @@ const LinkCreation = () => {
       description: "Comprehensive social media strategy, content creation, and management services."
     },
     {
-      icon: <Instagram className="h-12 w-12 text-social" />,
+      icon: <Palette className="h-12 w-12 text-social" />,
       title: "Graphic Design",
       description: "Eye-catching graphic design services for digital and print media."
     },
     {
       icon: <Youtube className="h-12 w-12 text-social" />,
-      title: "Video Production",
+      title: "Video Editing",
       description: "High-quality video production services for marketing and promotional content."
     }
   ];
@@ -48,14 +48,14 @@ const LinkCreation = () => {
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-purple-50 to-purple-100 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-social mb-6">MATANGI Link Creation</h1>
+            <h1 className="text-4xl font-bold text-social mb-6">Link Creation</h1>
             <p className="text-lg text-gray-700">
-            Matangi Consultancy supports small businesses with smart digital solutions— social media marketing, web development, online ads, and AI tools—to grow faster, reach more customers, and boost sales.
+              Matangi Consultancy supports small businesses with smart digital solutions— social media marketing, web development, online ads, and AI tools—to grow faster, reach more customers, and boost sales.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const LinkCreation = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Digital Services</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
@@ -81,17 +81,15 @@ const LinkCreation = () => {
       </section>
 
       {/* Our Process */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Creative Process</h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              {/* Process Steps */}
               <div className="hidden md:block absolute left-1/2 h-full w-0.5 bg-social -translate-x-1/2"></div>
-              
+
               <div className="space-y-12">
-                {/* Step 1 */}
                 <div className="relative flex flex-col md:flex-row md:items-center">
                   <div className="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
                     <h3 className="text-xl font-bold text-social">Discovery</h3>
@@ -104,8 +102,7 @@ const LinkCreation = () => {
                   </div>
                   <div className="flex-1 md:pl-8"></div>
                 </div>
-                
-                {/* Step 2 */}
+
                 <div className="relative flex flex-col md:flex-row md:items-center">
                   <div className="flex-1 md:text-right md:pr-8 md:hidden"></div>
                   <div className="hidden md:flex items-center justify-center z-10">
@@ -118,8 +115,7 @@ const LinkCreation = () => {
                     </p>
                   </div>
                 </div>
-                
-                {/* Step 3 */}
+
                 <div className="relative flex flex-col md:flex-row md:items-center">
                   <div className="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
                     <h3 className="text-xl font-bold text-social">Creation & Development</h3>
@@ -132,8 +128,7 @@ const LinkCreation = () => {
                   </div>
                   <div className="flex-1 md:pl-8"></div>
                 </div>
-                
-                {/* Step 4 */}
+
                 <div className="relative flex flex-col md:flex-row md:items-center">
                   <div className="flex-1 md:text-right md:pr-8 md:hidden"></div>
                   <div className="hidden md:flex items-center justify-center z-10">
@@ -150,13 +145,13 @@ const LinkCreation = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Portfolio */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Portfolio</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {portfolioItems.map((item, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -177,12 +172,12 @@ const LinkCreation = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <p className="text-gray-600 italic mb-6 text-lg">
-                "MATANGI's Link Creation team transformed our digital presence completely. 
-                Their expertise in social media management and content creation has helped us 
+                "MATANGI's Link Creation team transformed our digital presence completely.
+                Their expertise in social media management and content creation has helped us
                 reach a wider audience and significantly increase customer engagement."
               </p>
               <div className="flex items-center">
@@ -198,7 +193,7 @@ const LinkCreation = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-social text-white">
+      {/* <section className="py-16 bg-social text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -208,7 +203,7 @@ const LinkCreation = () => {
             Get a Free Consultation
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

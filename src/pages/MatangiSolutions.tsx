@@ -1,30 +1,31 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ChartBar, DollarSign, Receipt, Wallet } from "lucide-react";
+import { ShoppingCart, TrendingUp, Key, MapPin } from "lucide-react";
 
-const Financial = () => {
+const MatangiSolution = () => {
   const services = [
     {
-      icon: <ChartBar className="h-12 w-12 text-finance" />,
-      title: "Stock Market Analysis",
-      description: "Expert analysis of market trends and investment opportunities to maximize your returns."
+      icon: <ShoppingCart className="h-12 w-12 text-finance" />,
+      title: "Buy Property",
+      description: "Find and purchase the ideal property that suits your lifestyle and budget."
     },
     {
-      icon: <DollarSign className="h-12 w-12 text-finance" />,
-      title: "Financial Planning",
-      description: "Comprehensive financial planning services tailored to your specific goals and needs."
+      icon: <TrendingUp className="h-12 w-12 text-finance" />,
+      title: "Sell Property",
+      description: "List and sell your property quickly with expert market insights and support."
     },
     {
-      icon: <Wallet className="h-12 w-12 text-finance" />,
-      title: "Budget Management",
-      description: "Effective budget management strategies to optimize your financial resources."
+      icon: <Key className="h-12 w-12 text-finance" />,
+      title: "Rent Property",
+      description: "Explore rental options that fit your needs, whether short-term or long-term."
     },
     {
-      icon: <Receipt className="h-12 w-12 text-finance" />,
-      title: "Tax Advisory",
-      description: "Professional tax advisory services to minimize your tax liability and ensure compliance."
+      icon: <MapPin className="h-12 w-12 text-finance" />,
+      title: "Land Deals",
+      description: "Access verified land listings with full ownership transparency and legal checks."
     }
+
   ];
 
   return (
@@ -42,7 +43,7 @@ const Financial = () => {
           </div>
         </div>
       </div>
-    
+
       {/* Services Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -66,7 +67,7 @@ const Financial = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Financial Solutions</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Matagi Property Solutions</h2>
 
             <div className="space-y-6">
               <div className="flex items-start">
@@ -74,9 +75,9 @@ const Financial = () => {
                   <span className="block w-4 h-4 font-bold text-center">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Expert Financial Advisors</h3>
+                  <h3 className="text-xl font-semibold mb-2">Verified Listings</h3>
                   <p className="text-gray-600">
-                    Our team consists of seasoned financial advisors with years of experience in the market.
+                    We provide only thoroughly verified properties, ensuring peace of mind and transparency in every deal.
                   </p>
                 </div>
               </div>
@@ -86,9 +87,9 @@ const Financial = () => {
                   <span className="block w-4 h-4 font-bold text-center">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Personalized Strategy</h3>
+                  <h3 className="text-xl font-semibold mb-2">Tailored Recommendations</h3>
                   <p className="text-gray-600">
-                    We create custom financial strategies based on your unique goals and risk tolerance.
+                    Our system matches you with properties that perfectly suit your budget, location, and lifestyle preferences.
                   </p>
                 </div>
               </div>
@@ -98,9 +99,9 @@ const Financial = () => {
                   <span className="block w-4 h-4 font-bold text-center">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Transparent Reporting</h3>
+                  <h3 className="text-xl font-semibold mb-2">End-to-End Support</h3>
                   <p className="text-gray-600">
-                    Regular, clear reporting on your financial performance and progress toward goals.
+                    From site visits to legal paperwork, our team supports you throughout your property journey.
                   </p>
                 </div>
               </div>
@@ -110,9 +111,9 @@ const Financial = () => {
                   <span className="block w-4 h-4 font-bold text-center">4</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Continuous Support</h3>
+                  <h3 className="text-xl font-semibold mb-2">Trusted Network</h3>
                   <p className="text-gray-600">
-                    Ongoing guidance and support as market conditions change and your needs evolve.
+                    Leverage our strong network of builders, agents, and legal advisors to make confident property decisions.
                   </p>
                 </div>
               </div>
@@ -121,8 +122,9 @@ const Financial = () => {
         </div>
       </section>
 
+
       {/* Call to Action */}
-      <section className="py-16 bg-finance text-white">
+      {/* <section className="py-16 bg-finance text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Secure Your Financial Future?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -132,11 +134,11 @@ const Financial = () => {
             Schedule a Consultation
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>
   );
 };
 
-export default Financial;
+export default MatangiSolution;
