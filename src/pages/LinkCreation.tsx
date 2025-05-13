@@ -6,22 +6,22 @@ import { Globe, Share, Instagram, Facebook, Youtube, Palette } from "lucide-reac
 const LinkCreation = () => {
   const services = [
     {
-      icon: <Globe className="h-12 w-12 text-social" />,
+      icon: <Globe className="h-12 w-12 text-blue-600" />,
       title: "Website Development",
       description: "Professional website design and development for businesses of all sizes."
     },
     {
-      icon: <Share className="h-12 w-12 text-social" />,
+      icon: <Share className="h-12 w-12 text-blue-600" />,
       title: "Social Media Management",
       description: "Comprehensive social media strategy, content creation, and management services."
     },
     {
-      icon: <Palette className="h-12 w-12 text-social" />,
+      icon: <Palette className="h-12 w-12 text-blue-600" />,
       title: "Graphic Design",
       description: "Eye-catching graphic design services for digital and print media."
     },
     {
-      icon: <Youtube className="h-12 w-12 text-social" />,
+      icon: <Youtube className="h-12 w-12 text-blue-600" />,
       title: "Video Editing",
       description: "High-quality video production services for marketing and promotional content."
     }
@@ -53,7 +53,7 @@ const LinkCreation = () => {
       <div className="bg-gradient-to-r from-purple-50 to-purple-100 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-social mb-6">Link Creation</h1>
+            <h1 className="text-4xl  font-bold text-blue-600 mb-6">Link Creation</h1>
             <p className="text-lg text-gray-700">
               Matangi Consultancy supports small businesses with smart digital solutions— social media marketing, web development, online ads, and AI tools—to grow faster, reach more customers, and boost sales.
             </p>
@@ -69,10 +69,10 @@ const LinkCreation = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="flex justify-center mb-4">
+                <div className="flex  justify-center mb-4">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-social">{service.title}</h3>
+                <h3 className="text-xl text-blue-600 font-bold mb-3 ">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
@@ -158,9 +158,9 @@ const LinkCreation = () => {
                 <div className="h-48 bg-gray-300"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                  <p className="text-social font-medium mb-3">Client: {item.client}</p>
+                  <p className="text-blue-600 font-medium mb-3">Client: {item.client}</p>
                   <p className="text-gray-600">{item.description}</p>
-                  <button className="mt-4 text-social hover:underline font-medium">View Case Study</button>
+                  <button className="mt-4 text-blue-600 hover:underline font-medium">View Case Study</button>
                 </div>
               </div>
             ))}
@@ -184,7 +184,7 @@ const LinkCreation = () => {
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
                 <div>
                   <h4 className="font-bold">Rajesh Kumar</h4>
-                  <p className="text-social">Marketing Director, Sunrise Enterprises</p>
+                  <p className="text-blue-600">Marketing Director, Sunrise Enterprises</p>
                 </div>
               </div>
             </div>

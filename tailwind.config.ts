@@ -59,14 +59,14 @@ export default {
           300: "#d8b4fe",
           400: "#c084fc",
           500: "#a855f7",
-          600: "#9333ea",
-          700: "#7e22ce",
-          800: "#6b21a8",
-          900: "#581c87",
-          950: "#3b0764",
+          600: "#1E3A8A",
+          700: "#1E3A8A",
+          800: "#1E3A8A",
+          900: "#1E3A8A",
+          950: "#1E3A8A",
         },
         finance: {
-          DEFAULT: "#7e22ce",
+          DEFAULT: "#3d52a0",
           light: "#d8b4fe"
         },
         realestate: {
