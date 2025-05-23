@@ -85,27 +85,27 @@ const Hero = () => {
         </div>
 
         {/* Hero Content with 3D effects */}
-        <div className="relative z-10 flex flex-col items-center backdrop-blur-md bg-white/5 p-8 rounded-2xl shadow-[0_8px_32px_#7091E6] border border-white/20">
-          <h1 className="text-4xl md:text-6xl font-bold text-center text-white animate-fade-in [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 hover:scale-105">
-            Welcome to <span className="bg-gradient-to-r from-matangi-300 to-matangi-100 text-white bg-clip-text">MATANGI CONSULTANCY</span>
+        <div className="relative z-10 flex flex-col items-center backdrop-blur-md bg-white/100   p-8  border border-white/20">
+          <h1 className="text-4xl md:text-6xl font-bold text-center text-blue-600 animate-fade-in [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 hover:scale-105">
+            Welcome to <span className="bg-gradient-to-r from-matangi-300 to-matangi-100 text-blue-600 bg-clip-text">MATANGI CONSULTANCY</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-200 mt-6 max-w-2xl text-center animate-fade-in backdrop-blur-sm p-4 rounded-lg bg-black/10">
+          <p className="text-lg md:text-xl text-white mt-6 max-w-2xl text-center animate-fade-in backdrop-blur-sm p-4 rounded-lg bg-blue-600">
             At Matangi Consultancy, we believe in honesty, innovation, and
             results. Our mission is to empower clients with smart, practical
             solutions across real estate, digital marketing, finance, and food
             business.
-
           </p>
 
+
           <div className="mt-8 flex flex-wrap gap-4 justify-center animate-fade-in">
-            <Link to="/financial">
+            {/* <Link to="/financial">
               <Button className="bg-violet-600/80 hover:bg-violet-50 hover:text-black transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20">
                 Explore Our Solutions
               </Button>
-            </Link>
+            </Link> */}
             <Link to="/contact">
-              <Button variant="outline" className="border-violet-400/50  hover:bg-violet-800/50 transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm">
+              <Button variant="outline" className="border-violet-400/50 text-blue-600 hover:bg-violet-800/50 transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm">
                 Contact Us
               </Button>
             </Link>

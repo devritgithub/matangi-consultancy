@@ -1,7 +1,8 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ShoppingCart, TrendingUp, Key, MapPin } from "lucide-react";
+import { ShoppingCart, TrendingUp, Key, MapPin, Handshake } from "lucide-react";
+import matangiLogo from '../assets/matangi_solutions.png'
 
 const MatangiSolution = () => {
   const services = [
@@ -11,7 +12,7 @@ const MatangiSolution = () => {
       description: "Find and purchase the ideal property that suits your lifestyle and budget."
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-finance" />,
+      icon: <Handshake className="h-12 w-12 text-finance" />,
       title: "Sell Property",
       description: "List and sell your property quickly with expert market insights and support."
     },
@@ -34,15 +35,21 @@ const MatangiSolution = () => {
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-16">
-        <div className="container mx-auto px-4">
+        <img
+          src={matangiLogo}
+          alt="Matangi Consultancy Logo"
+          className="mx-auto mb-0 h-50 w-auto max-w-[250px]"
+        />
+        <div className="container mx-auto px-4 pt-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-finance mb-6">MATANGI Solutions</h1>
+            {/* <h1 className="text-4xl font-bold text-finance mb-6">MATANGI Solutions</h1> */}
             <p className="text-lg text-gray-700">
-              Matangi Consultancy offers expert real estate services in Ahmedabad and across Gujarat. Whether you ' re looking to buy, sell, or rent residential or commercial properties, we provide reliable guidance. We also assist with land investments and other property-related opportunities to help you make smart, profitable decisions
+              Matangi Consultancy offers expert real estate services in Ahmedabad and across Gujarat. Whether you're looking to buy, sell, or rent residential or commercial properties, we provide reliable guidance. We also assist with land investments and other property-related opportunities to help you make smart, profitable decisions.
             </p>
           </div>
         </div>
       </div>
+
 
       {/* Services Section */}
       <section className="py-16">
@@ -57,6 +64,13 @@ const MatangiSolution = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-finance">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+
+                <button
+                  onClick={() => window.open('https://wa.me/916353128977', '_blank')}
+                  className="mt-4 px-4 py-2 bg-finance text-white rounded hover:bg-finance-dark transition"
+                >
+                  Contact Now
+                </button>
               </div>
             ))}
           </div>

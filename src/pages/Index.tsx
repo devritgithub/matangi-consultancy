@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BusinessCard from "@/components/BusinessCard";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,7 +63,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-6 ">
             {businessServices.map((service, index) => (
               <BusinessCard
                 key={index}

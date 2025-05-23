@@ -51,7 +51,7 @@ const FinBudget = () => {
         <div className="container mx-auto px-4">
 
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-realestate mb-6">Fin Budget Analysis</h1>
+            {/* <h1 className="text-4xl font-bold text-realestate mb-6">Fin Budget Analysis</h1> */}
             <p className="text-lg text-gray-700">
               Matangi Consultancy provides personalized financial advisory services, including guidance on stock markets, mutual funds, personal finance, investment planning, and gold trading—helping you build wealth with confidence.
 
@@ -74,6 +74,12 @@ const FinBudget = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-realestate">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+                <button
+                  onClick={() => window.open('https://wa.me/916353128977', '_blank')}
+                  className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-finance-dark transition"
+                >
+                  Contact Now
+                </button>
               </div>
             ))}
 
@@ -85,6 +91,12 @@ const FinBudget = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-realestate">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+                <button
+                  onClick={() => window.open('https://wa.me/916353128977', '_blank')}
+                  className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-finance-dark transition"
+                >
+                  Contact Now
+                </button>
               </div>
             ))}
           </div>
@@ -93,12 +105,11 @@ const FinBudget = () => {
 
 
       {/* Featured Properties */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Properties</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Property 1 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 bg-gray-300"></div>
               <div className="p-6">
@@ -111,7 +122,6 @@ const FinBudget = () => {
               </div>
             </div>
 
-            {/* Property 2 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 bg-gray-300"></div>
               <div className="p-6">
@@ -124,7 +134,6 @@ const FinBudget = () => {
               </div>
             </div>
 
-            {/* Property 3 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 bg-gray-300"></div>
               <div className="p-6">
@@ -138,13 +147,42 @@ const FinBudget = () => {
             </div>
           </div>
 
-          {/* <div className="text-center mt-10">
+          <div className="text-center mt-10">
             <button className="bg-realestate hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
               View All Properties
             </button>
-          </div> */}
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-16 bg-realestate text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Impact in Numbers</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-5xl font-bold mb-2">50+</div>
+              <p className="text-lg">Clients Served</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold mb-2">₹10 Lakh</div>
+              <p className="text-lg">Investments Managed</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold mb-2">5+</div>
+              <p className="text-lg">Financial Products</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold mb-2">95%</div>
+              <p className="text-lg">Client Satisfaction</p>
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* Why Choose Us Section */}
       <section className="py-16">

@@ -45,14 +45,14 @@ const BusinessCard = ({ title, description, type, link }: BusinessCardProps) => 
   };
 
   return (
-    <div className={`business-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl ${bgColors[type]} bg-opacity-20 p-6`}>
+    <div className={`business-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl flex flex-col justify-between ${bgColors[type]} bg-opacity-20 p-6`}>
       <div className={`${textColors[type]} mb-4 flex justify-center`}>
         {icons[type]}
       </div>
       <h3 className={`text-xl font-bold mb-3 ${textColors[type]}`}>{title}</h3>
       <p className="text-gray-700 mb-6">{description}</p>
       <Link to={link}>
-        <Button className={`w-full ${buttonColors[type]} text-white`}>
+        <Button className={`w-full ${buttonColors[type]} text-white`} onClick={() => window.scrollTo(0,0)}>
           Learn More
         </Button>
       </Link>

@@ -12,6 +12,7 @@ import { useState } from "react";
 import MatangiSolutions from "./pages/MatangiSolutions";
 import FinBudget from "./pages/FinBudget";
 import ContactUs from "./pages/contact";
+import FloatingWhatsapp from "./components/FloatingWhatsapp";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -22,6 +23,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+         <FloatingWhatsapp /> 
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/financial" element={<MatangiSolutions />} />
