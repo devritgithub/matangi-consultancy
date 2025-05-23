@@ -1,7 +1,12 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Globe, Share, Instagram, Facebook, Youtube, Palette } from "lucide-react";
+import { Globe, Share, Youtube, Palette } from "lucide-react";
+import linkLogo from '../assets/link-creation.png'
+import marketingImages from '../assets/marketing_post.jpg'
+import bradMarketingImages from '../assets/dental.png'
+import parkParadaise from '../assets/park-paradise.png'
+
 
 const LinkCreation = () => {
   const services = [
@@ -29,31 +34,41 @@ const LinkCreation = () => {
 
   const portfolioItems = [
     {
-      title: "Brand Identity Redesign",
-      client: "Fashion Retailer",
-      description: "Complete brand identity redesign including logo, social media assets, and website."
+      title: "Dental Clinic Social Media Branding",
+      client: "Smit Dental",
+      description: "Developed a cohesive social media presence with custom graphics, brand-aligned posts, and engagement strategies tailored for dental care awareness.",
+      image: `${bradMarketingImages}`
     },
     {
-      title: "Social Media Campaign",
-      client: "Food Chain",
-      description: "Viral social media campaign that increased engagement by 200% and followers by 150%."
+      title: "Growth Strategy",
+      client: "Pahal Marketing Media",
+      description: "Delivered a 90-day content calendar with post designs, captions, and a growth framework tailored to reach B2B founders.",
+      image: `${marketingImages}`
     },
     {
-      title: "Corporate Website",
-      client: "Financial Services",
-      description: "Modern, responsive website with integrated customer service features and analytics."
+      title: "Website Development",
+      client: "Park Paradise",
+      description: "Designed and developed a responsive 360° property showcase website to enhance user experience and drive visitor engagement.",
+      image: `${parkParadaise}`
     }
+
   ];
+
 
   return (
     <>
       <Navbar />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-purple-50 to-purple-100 py-16">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 py-16 pt-15">
+        <img
+          src={linkLogo}
+          alt="Matangi Consultancy Logo"
+          className="mx-auto h-26  max-w-[150px] mb-10"
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl  font-bold text-blue-600 mb-6">Link Creation</h1>
+            {/* <h1 className="text-4xl  font-bold text-blue-600 mb-6">Link Creation</h1> */}
             <p className="text-lg text-gray-700">
               Matangi Consultancy supports small businesses with smart digital solutions— social media marketing, web development, online ads, and AI tools—to grow faster, reach more customers, and boost sales.
             </p>
@@ -68,15 +83,29 @@ const LinkCreation = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="flex  justify-center mb-4">
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg p-8 flex flex-col justify-between text-center hover:shadow-xl transition-shadow"
+              >
+                <div className="flex justify-center mb-4">
                   {service.icon}
                 </div>
-                <h3 className="text-xl text-blue-600 font-bold mb-3 ">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-xl text-blue-600 font-bold mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 mb-6 flex-grow">
+                  {service.description}
+                </p>
+                <button
+                  onClick={() => window.open('https://wa.me/916353128977', '_blank')}
+                  className="mt-auto px-4 py-2 bg-blue-600 text-white rounded hover:bg-finance-dark transition"
+                >
+                  Contact Now
+                </button>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
@@ -155,12 +184,15 @@ const LinkCreation = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {portfolioItems.map((item, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
-                <div className="h-48 bg-gray-300"></div>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-60 object-cover"
+                />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{item.title}</h3>
                   <p className="text-blue-600 font-medium mb-3">Client: {item.client}</p>
                   <p className="text-gray-600">{item.description}</p>
-                  <button className="mt-4 text-blue-600 hover:underline font-medium">View Case Study</button>
                 </div>
               </div>
             ))}
@@ -168,8 +200,10 @@ const LinkCreation = () => {
         </div>
       </section>
 
+
+
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
 
@@ -190,7 +224,7 @@ const LinkCreation = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       {/* <section className="py-16 bg-social text-white">

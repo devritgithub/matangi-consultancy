@@ -1,7 +1,8 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Utensils, Coffee, Pizza, Salad, Wine, Facebook, Instagram } from "lucide-react";
+import { Utensils, Pizza, Wine, Instagram } from "lucide-react";
+import foodConnectionLogo from '../assets/Food_connection.png'
 
 const FoodConnection = () => {
   const services = [
@@ -59,10 +60,15 @@ const FoodConnection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r text-orange-700 py-16">
+      <div className="bg-gradient-to-r text-orange-700 py-16 pt-0">
+           <img
+          src={foodConnectionLogo}
+          alt="Matangi Consultancy Logo"
+          className="mx-auto h-26  max-w-[250px]"
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-orange-700 text-orange-700 mb-6">Food Connection</h1>
+            {/* <h1 className="text-4xl font-bold text-orange-700 text-orange-700 mb-6">Food Connection</h1> */}
             <p className="text-lg text-gray-700">
               Matangi Consultancy helps food brands grow through social media marketing, influencer collaborations, and digital strategies—connecting you with the right audience and boosting your business visibility and sales.
             </p>
@@ -77,12 +83,18 @@ const FoodConnection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-white rounded-lg shadow-lg p-8 flex flex-col justify-between text-center hover:shadow-xl transition-shadow">
                 <div className="flex justify-center mb-4">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-orange-700">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+                 <button
+                  onClick={() => window.open('https://wa.me/916353128977', '_blank')}
+                  className="mt-4 px-4 py-2 bg-orange-700 text-white rounded hover:bg-finance-dark transition"
+                >
+                  Contact Now
+                </button>
               </div>
             ))}
           </div>
@@ -138,6 +150,7 @@ const FoodConnection = () => {
               <div key={index} className="p-6 border border-gray-200 rounded-lg hover:border-food hover:shadow-md transition-all">
                 <h3 className="text-lg font-bold mb-2 text-orange-700">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
+                 
               </div>
             ))}
           </div>
@@ -161,7 +174,7 @@ const FoodConnection = () => {
             </div>
 
             <div>
-              <div className="text-5xl font-bold mb-2">50+</div>
+              <div className="text-5xl font-bold mb-2">15+</div>
               <p className="text-lg">Restaurant Partners</p>
             </div>
 
