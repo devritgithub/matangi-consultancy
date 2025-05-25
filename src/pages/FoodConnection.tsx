@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Utensils, Pizza, Wine, Instagram } from "lucide-react";
 import foodConnectionLogo from '../assets/Food_connection.png'
+import food1 from '../assets/1food.jpg'
+import food2 from '../assets/2food.jpg'
 
 const FoodConnection = () => {
   const services = [
@@ -22,7 +24,7 @@ const FoodConnection = () => {
       description: "Comprehensive marketing strategies tailored for restaurants and food businesses."
     },
     {
-      icon: <Instagram className="h-12 w-12 text-orange-700" />, 
+      icon: <Instagram className="h-12 w-12 text-orange-700" />,
       title: "Social Media Setup",
       description: "Complete setup and optimization of your social media profiles to enhance your online presence."
     }
@@ -61,7 +63,7 @@ const FoodConnection = () => {
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r text-orange-700 py-16 pt-0">
-           <img
+        <img
           src={foodConnectionLogo}
           alt="Matangi Consultancy Logo"
           className="mx-auto h-26  max-w-[250px]"
@@ -89,7 +91,7 @@ const FoodConnection = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-orange-700">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
-                 <button
+                <button
                   onClick={() => window.open('https://wa.me/916353128977', '_blank')}
                   className="mt-4 px-4 py-2 bg-orange-700 text-white rounded hover:bg-finance-dark transition"
                 >
@@ -106,53 +108,41 @@ const FoodConnection = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Food Content</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {/* Featured Item 1 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-56 bg-gray-300"></div>
-              <div className="p-6">
-                <span className="bg-food-light text-orange-700 px-3 py-1 rounded-full text-sm font-medium">Video</span>
-                <h3 className="text-xl font-bold mt-3 mb-2">Authentic Street Food Series</h3>
-                <p className="text-gray-600">Showcasing the vibrant street food culture with authentic stories.</p>
-              </div>
+              <img className="h-65 bg-gray-300" src={food1}></img>
+              <a href="https://www.instagram.com/reel/C7B0JPbJ3rC/?igsh=NWU4a3JnOHVpODdq" target="_blank" rel="noopener noreferrer">
+                <div className="p-6 hover:bg-gray-50 transition">
+                  <span className="bg-food-light text-orange-700 px-3 py-1 rounded-full text-sm font-medium">Video</span>
+                  <h3 className="text-xl font-bold mt-3 mb-2">We Have A Quality Influencers</h3>
+                  <p className="text-gray-600">Showcasing the vibrant street food culture with authentic stories.</p>
+                </div>
+              </a>
+
             </div>
 
             {/* Featured Item 2 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-56 bg-gray-300"></div>
+              <img className="h-65 bg-gray-300" src={food2}></img>
+               <a href="https://www.instagram.com/reel/C7g3Vy_smpC/?igsh=MXM3bzNyZmFhZXJ3YQ==" target="_blank" rel="noopener noreferrer">
               <div className="p-6">
                 <span className="bg-food-light text-orange-700 px-3 py-1 rounded-full text-sm font-medium">Photography</span>
-                <h3 className="text-xl font-bold mt-3 mb-2">Fine Dining Showcase</h3>
-                <p className="text-gray-600">Elegant photography highlighting gourmet cuisine and fine dining experiences.</p>
+                <h3 className="text-xl font-bold mt-3 mb-2">Strategic Planning</h3>
+                <p className="text-gray-600">Where Brands Partner With Strategic Influencers.</p>
               </div>
+            </a>
             </div>
 
             {/* Featured Item 3 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+            {/* <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 bg-gray-300"></div>
               <div className="p-6">
                 <span className="bg-food-light text-orange-700 px-3 py-1 rounded-full text-sm font-medium">Campaign</span>
                 <h3 className="text-xl font-bold mt-3 mb-2">Viral Food Challenge</h3>
                 <p className="text-gray-600">Social media campaign that generated over 1 million views and interactions.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Food Connection Services</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <div key={index} className="p-6 border border-gray-200 rounded-lg hover:border-food hover:shadow-md transition-all">
-                <h3 className="text-lg font-bold mb-2 text-orange-700">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-                 
-              </div>
-            ))}
+            </div> */}
           </div>
         </div>
       </section>
@@ -186,8 +176,27 @@ const FoodConnection = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Why Choose Us */}
       <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Food Connection Services</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+              <div key={index} className="p-6 border border-gray-200 rounded-lg hover:border-food hover:shadow-md transition-all">
+                <h3 className="text-lg font-bold mb-2 text-orange-700">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Testimonial */}
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-10">What Our Clients Say</h2>
@@ -204,7 +213,7 @@ const FoodConnection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       {/* <section className="py-16 bg-gray-50">
