@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LineChart, PieChart, Repeat, TrendingUp, UserPlus } from "lucide-react";
 import dreamLogo from '../assets/dream-capital-2.png';
+// import finBudget  from '../assets/fin_budget_logo.png'
+import finBudget from '../assets/untitled_design.png'
 
 const FinBudget = () => {
   const services = [
@@ -42,11 +44,25 @@ const FinBudget = () => {
       <div className="bg-gradient-to-r from-green-50 to-green-100 py-16 pt-0">
 
         {/* Logo */}
-        <img
-          src={dreamLogo}
-          alt="Matangi Consultancy Logo"
-          className="mx-auto h-26  max-w-[200px]"
-        />
+        <div className="flex items-center w-full">
+          <div className="flex-grow border-t border-gray-400"></div>
+
+          <div className="flex space-x-0 px-4">
+            <img
+              src={dreamLogo}
+              alt="Dream Logo"
+              className="mx-auto h-26  max-w-[200px]"
+            />
+            <img
+              src={finBudget}
+              alt="Fin Budget Logo"
+              className="mx-auto h-26  max-w-[200px]"
+            />
+          </div>
+
+          <div className="flex-grow border-t border-gray-400"></div>
+        </div>
+
 
         <div className="container mx-auto px-4">
 

@@ -6,7 +6,7 @@ import linkLogo from '../assets/link-creation.png'
 import marketingImages from '../assets/marketing_post.jpg'
 import bradMarketingImages from '../assets/dental.png'
 import parkParadaise from '../assets/park-paradise.png'
-
+import link2 from '../assets/link2.jpg'
 
 const LinkCreation = () => {
   const services = [
@@ -37,19 +37,23 @@ const LinkCreation = () => {
       title: "Dental Clinic Social Media Branding",
       client: "Smit Dental",
       description: "Developed a cohesive social media presence with custom graphics, brand-aligned posts, and engagement strategies tailored for dental care awareness.",
-      image: `${bradMarketingImages}`
+      image: `${link2}`,
+      link: "https://www.instagram.com/linkcreation?utm_source=qr&igsh=MThtbnBrcW1zbzFsbg=="
     },
-    {
-      title: "Growth Strategy",
-      client: "Pahal Marketing Media",
-      description: "Delivered a 90-day content calendar with post designs, captions, and a growth framework tailored to reach B2B founders.",
-      image: `${marketingImages}`
-    },
+    // {
+    //   title: "Growth Strategy",
+    //   client: "Pahal Marketing Media",
+    //   description: "Delivered a 90-day content calendar with post designs, captions, and a growth framework tailored to reach B2B founders.",
+    //   image: `${marketingImages}`,
+    //   link:"https://www.instagram.com/linkcreation?utm_source=qr&igsh=MThtbnBrcW1zbzFsbg=="
+
+    // },
     {
       title: "Website Development",
       client: "Park Paradise",
       description: "Designed and developed a responsive 360° property showcase website to enhance user experience and drive visitor engagement.",
-      image: `${parkParadaise}`
+      image: `${parkParadaise}`,
+      link: "https://www.instagram.com/linkcreation?utm_source=qr&igsh=MThtbnBrcW1zbzFsbg=="
     }
 
   ];
@@ -181,7 +185,7 @@ const LinkCreation = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Portfolio</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {portfolioItems.map((item, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
                 <img
@@ -190,9 +194,17 @@ const LinkCreation = () => {
                   className="w-full h-60 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                  <p className="text-blue-600 font-medium mb-3">Client: {item.client}</p>
-                  <p className="text-gray-600">{item.description}</p>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 hover:bg-gray-50 transition rounded-lg"
+                  >
+                    <h3 className="text-xl font-bold mb-1">{item.title}</h3>
+                    <p className="text-blue-600 font-medium mb-3">Client: {item.client}</p>
+                    <p className="text-gray-600">{item.description}</p>
+                  </a>
+
                 </div>
               </div>
             ))}

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import mainLogo from "../assets/Matangi_consultancy_logo.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
+              {/* <img src={mainLogo} alt="Matangi Logo" className="h-10 w-auto" /> */}
+
           <Link to="/" className="flex items-center space-x-3">
-            <span className="font-bold text-2xl text-matangi-700">MATANGI</span>
-            <span className="text-gray-600 font-medium">CONSULTANCY</span>
+            <img src={mainLogo} alt="Matangi Logo" className="pl-[60px] h-12 w-auto" />
+            {/* <span className="font-bold text-2xl text-matangi-700">MATANGI</span>
+            <span className="text-gray-600 font-medium">CONSULTANCY</span> */}
           </Link>
 
           {/* Desktop Navigation */}
