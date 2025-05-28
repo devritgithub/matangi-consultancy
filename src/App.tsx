@@ -13,6 +13,7 @@ import MatangiSolutions from "./pages/MatangiSolutions";
 import FinBudget from "./pages/FinBudget";
 import ContactUs from "./pages/contact";
 import FloatingWhatsapp from "./components/FloatingWhatsapp";
+import DreamCapitalForm from "./pages/dreamCapitalForm";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/link-creation" element={<LinkCreation />} />
             <Route path="/food-connection" element={<FoodConnection />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/dreamcapital" element={<DreamCapitalForm />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

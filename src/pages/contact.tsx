@@ -1,13 +1,41 @@
 'use client';
 
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
+import { Toaster, toast } from 'react-hot-toast'; 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const ContactUs = () => {
+    const form = useRef(null);
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_bjufnfl',
+            'template_fjmcw79',
+            form.current!,
+            'LFc3EHYxA0iXYS2hA'
+        )
+        .then(
+            (result) => {
+                toast.success('Message sent successfully! 🚀');
+                (form.current as HTMLFormElement).reset();
+            },
+            (error) => {
+                toast.error('Failed to send message 😢');
+            }
+        );
+    };
+
     return (
         <>
             <Navbar />
+
+            {/* Toaster should be placed at the root level */}
+            <Toaster position="top-right" reverseOrder={false} />
 
             <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen">
                 <motion.div
@@ -33,11 +61,12 @@ const ContactUs = () => {
                             We’re ready to help you grow your finances. Let us know how we can support you.
                         </p>
 
-                        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Full Name */}
                             <div className="group relative">
                                 <input
                                     type="text"
+                                    name="user_name"
                                     required
                                     className="peer w-full px-4 pt-6 pb-2 text-sm bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     placeholder=" "
@@ -51,6 +80,7 @@ const ContactUs = () => {
                             <div className="group relative">
                                 <input
                                     type="email"
+                                    name="user_email"
                                     required
                                     className="peer w-full px-4 pt-6 pb-2 text-sm bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     placeholder=" "
@@ -64,6 +94,7 @@ const ContactUs = () => {
                             <div className="group relative md:col-span-2">
                                 <input
                                     type="tel"
+                                    name="user_phone"
                                     required
                                     className="peer w-full px-4 pt-6 pb-2 text-sm bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     placeholder=" "
@@ -76,6 +107,7 @@ const ContactUs = () => {
                             {/* Message */}
                             <div className="group relative md:col-span-2">
                                 <textarea
+                                    name="message"
                                     required
                                     rows={5}
                                     className="peer w-full px-4 pt-6 pb-2 text-sm bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"

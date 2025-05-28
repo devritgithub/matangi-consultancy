@@ -37,76 +37,42 @@ const Hero = () => {
               <CarouselItem>
                 <div className="relative aspect-video w-[90%] mx-auto rounded-xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.02] hover:rotate-y-12 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-matangi-500/20 to-matangi-700/20 group-hover:opacity-0 transition-opacity duration-300"></div>
-                  {/* <video
-                    autoPlay
-                    muted
-                    loop
-                    
-                    className="w-full h-full object-cover shadow-[0_20px_50px_rgba(126,34,206,0.3)] group-hover:shadow-[0_30px_60px_rgba(147,51,234,0.4)]"
-                  >
-                    <source src="/videos/financial.mp4" type="video/mp4" />
-                  </video> */}
 
                   <img className="w-full h-full object-cover shadow-[0_20px_50px_rgba(126,34,206,0.3)] group-hover:shadow-[0_30px_60px_rgba(147,51,234,0.4)]" src={main1}></img>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center transform-gpu transition-transform duration-500 group-hover:translate-z-12">
-                    {/* <h3 className="text-white text-3xl font-bold [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 group-hover:scale-110">Financial Solutions</h3> */}
+
                   </div>
                 </div>
               </CarouselItem>
               <CarouselItem>
                 <div className="relative aspect-video w-[90%] mx-auto rounded-xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.02] hover:rotate-y-12 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 group-hover:opacity-0 transition-opacity duration-300"></div>
-                  {/* <video
-                    autoPlay
-                    muted
-                    loop
-                    className="w-full h-full object-cover shadow-[0_20px_50px_rgba(34,_197,_94,_0.7)] group-hover:shadow-[0_30px_60px_rgba(16,_185,_129,_0.8)]"
-                  >
-                    <source src="/videos/realestate.mp4" type="video/mp4" />
-                  </video> */}
-                  
+
                   <img className="w-full h-full object-cover shadow-[0_20px_50px_rgba(126,34,206,0.3)] group-hover:shadow-[0_30px_60px_rgba(147,51,234,0.4)]" src={main2}></img>
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center transform-gpu transition-transform duration-500 group-hover:translate-z-12">
-                    {/* <h3 className="text-white text-3xl font-bold [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 group-hover:scale-110">Real Estate</h3> */}
+
                   </div>
                 </div>
               </CarouselItem>
               <CarouselItem>
                 <div className="relative aspect-video w-[90%] mx-auto rounded-xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.02] hover:rotate-y-12 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-amber-500/20 group-hover:opacity-0 transition-opacity duration-300"></div>
-                  {/* <video
-                    autoPlay
-                    muted
-                    loop
-                    className="w-full h-full object-cover shadow-[0_20px_50px_rgba(249,_115,_22,_0.7)] group-hover:shadow-[0_30px_60px_rgba(245,_158,_11,_0.8)]"
-                  >
-                    <source src="/videos/food.mp4" type="video/mp4" />
-                  </video> */}
 
                   <img className="w-full h-full object-cover shadow-[0_20px_50px_rgba(126,34,206,0.3)] group-hover:shadow-[0_30px_60px_rgba(147,51,234,0.4)]" src={main3}></img>
-                  
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center transform-gpu transition-transform duration-500 group-hover:translate-z-12">
-                    {/* <h3 className="text-white text-3xl font-bold [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 group-hover:scale-110">Food Connection</h3> */}
+
                   </div>
                 </div>
               </CarouselItem>
-                <CarouselItem>
+              <CarouselItem>
                 <div className="relative aspect-video w-[90%] mx-auto rounded-xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.02] hover:rotate-y-12 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-amber-500/20 group-hover:opacity-0 transition-opacity duration-300"></div>
-                  {/* <video
-                    autoPlay
-                    muted
-                    loop
-                    className="w-full h-full object-cover shadow-[0_20px_50px_rgba(249,_115,_22,_0.7)] group-hover:shadow-[0_30px_60px_rgba(245,_158,_11,_0.8)]"
-                  >
-                    <source src="/videos/food.mp4" type="video/mp4" />
-                  </video> */}
 
                   <img className="w-full h-full object-cover shadow-[0_20px_50px_rgba(126,34,206,0.3)] group-hover:shadow-[0_30px_60px_rgba(147,51,234,0.4)]" src={main4}></img>
-                  
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center transform-gpu transition-transform duration-500 group-hover:translate-z-12">
-                    {/* <h3 className="text-white text-3xl font-bold [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] transform-gpu transition-all duration-500 group-hover:scale-110">Food Connection</h3> */}
                   </div>
                 </div>
               </CarouselItem>
@@ -131,13 +97,9 @@ const Hero = () => {
 
 
           <div className="mt-8 flex flex-wrap gap-4 justify-center animate-fade-in">
-            {/* <Link to="/financial">
-              <Button className="bg-violet-600/80 hover:bg-violet-50 hover:text-black transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20">
-                Explore Our Solutions
-              </Button>
-            </Link> */}
+
             <Link to="/contact">
-              <Button variant="outline" className="border-violet-400/50 text-blue-600 hover:bg-violet-800/50 transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm">
+              <Button variant="outline" className="border-white text-blue-600 hover:bg-white transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-y-12 shadow-lg hover:shadow-xl backdrop-blur-sm">
                 Contact Us
               </Button>
             </Link>
