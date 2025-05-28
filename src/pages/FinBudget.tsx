@@ -3,8 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LineChart, PieChart, Repeat, TrendingUp, UserPlus } from "lucide-react";
 import dreamLogo from '../assets/dream-capital-2.png';
-// import finBudget  from '../assets/fin_budget_logo.png'
 import finBudget from '../assets/untitled_design.png'
+
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+
 
 const FinBudget = () => {
   const services = [
@@ -67,7 +70,6 @@ const FinBudget = () => {
         <div className="container mx-auto px-4">
 
           <div className="max-w-3xl mx-auto text-center">
-            {/* <h1 className="text-4xl font-bold text-realestate mb-6">Fin Budget Analysis</h1> */}
             <p className="text-lg text-gray-700">
               Matangi Consultancy provides personalized financial advisory services, including guidance on stock markets, mutual funds, personal finance, investment planning, and gold trading—helping you build wealth with confidence.
 
@@ -119,57 +121,6 @@ const FinBudget = () => {
         </div>
       </section>
 
-
-      {/* Featured Properties */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Properties</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-48 bg-gray-300"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Luxury Villa</h3>
-                <p className="text-gray-600 mb-4">Prime location with modern amenities and spacious living.</p>
-                <div className="flex justify-between">
-                  <span className="text-realestate font-bold">₹2.5 Cr</span>
-                  <button className="text-realestate hover:underline">View Details</button>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-48 bg-gray-300"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Commercial Complex</h3>
-                <p className="text-gray-600 mb-4">Strategic location ideal for retail and office spaces.</p>
-                <div className="flex justify-between">
-                  <span className="text-realestate font-bold">₹5.8 Cr</span>
-                  <button className="text-realestate hover:underline">View Details</button>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-48 bg-gray-300"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Residential Apartment</h3>
-                <p className="text-gray-600 mb-4">Modern apartments with premium amenities in city center.</p>
-                <div className="flex justify-between">
-                  <span className="text-realestate font-bold">₹98 Lakh</span>
-                  <button className="text-realestate hover:underline">View Details</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-10">
-            <button className="bg-realestate hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-              View All Properties
-            </button>
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-16 bg-realestate text-white">
         <div className="container mx-auto px-4">
@@ -240,18 +191,18 @@ const FinBudget = () => {
       </section>
 
 
-      {/* Call to Action */}
-      {/* <section className="py-16 bg-realestate text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Find Your Perfect Property?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact our real estate experts today to discover properties that match your requirements.
-          </p>
-          <button className="bg-white text-realestate font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
-            Contact Our Experts
-          </button>
-        </div>
-      </section> */}
+      <section className="pb-10 pt-0">
+       
+          <div className="mt-8 flex flex-wrap gap-4 justify-center animate-fade-in">
+         
+            <Link to="/dreamcapital">
+              <Button variant="outline" className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-finance-dark transition">
+                Contact Us
+              </Button>
+            </Link>
+          </div>
+      </section>
+
 
       <Footer />
     </>

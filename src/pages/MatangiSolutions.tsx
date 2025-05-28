@@ -1,7 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ShoppingCart, TrendingUp, Key, MapPin, Handshake } from "lucide-react";
+import { ShoppingCart, Key, MapPin, Handshake } from "lucide-react";
 import matangiLogo from '../assets/matangi_solutions.png'
 
 const MatangiSolution = () => {
@@ -42,7 +42,6 @@ const MatangiSolution = () => {
         />
         <div className="container mx-auto px-4 pt-6">
           <div className="max-w-3xl mx-auto text-center">
-            {/* <h1 className="text-4xl font-bold text-finance mb-6">MATANGI Solutions</h1> */}
             <p className="text-lg text-gray-700">
               Matangi Consultancy offers expert real estate services in Ahmedabad and across Gujarat. Whether you're looking to buy, sell, or rent residential or commercial properties, we provide reliable guidance. We also assist with land investments and other property-related opportunities to help you make smart, profitable decisions.
             </p>
@@ -135,20 +134,6 @@ const MatangiSolution = () => {
           </div>
         </div>
       </section>
-
-
-      {/* Call to Action */}
-      {/* <section className="py-16 bg-finance text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Secure Your Financial Future?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Schedule a consultation with our financial experts today and take the first step toward financial freedom.
-          </p>
-          <button className="bg-white text-finance font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
-            Schedule a Consultation
-          </button>
-        </div>
-      </section> */}
 
       <Footer />
     </>

@@ -76,20 +76,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      {/* <section className="bg-matangi-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to grow your business?</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Partner with MATANGI CONSULTANCY and take your business to new heights with our comprehensive solutions.
-          </p>
-          <Button className="bg-white text-matangi-900 hover:bg-gray-100 px-8 py-6 text-lg">
-            Contact Us Today
-          </Button>
-        </div>
-      </section> */}
-
+      
       <Footer />
     </>
   );

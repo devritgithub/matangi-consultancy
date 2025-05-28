@@ -62,7 +62,7 @@ const FoodConnection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r text-orange-700 py-16 pt-0">
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 text-orange-700 py-16 pt-0">
         <img
           src={foodConnectionLogo}
           alt="Matangi Consultancy Logo"
@@ -133,16 +133,6 @@ const FoodConnection = () => {
               </div>
             </a>
             </div>
-
-            {/* Featured Item 3 */}
-            {/* <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="h-56 bg-gray-300"></div>
-              <div className="p-6">
-                <span className="bg-food-light text-orange-700 px-3 py-1 rounded-full text-sm font-medium">Campaign</span>
-                <h3 className="text-xl font-bold mt-3 mb-2">Viral Food Challenge</h3>
-                <p className="text-gray-600">Social media campaign that generated over 1 million views and interactions.</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -192,41 +182,6 @@ const FoodConnection = () => {
           </div>
         </div>
       </section>
-
-
-
-      {/* Testimonial */}
-      {/* <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-10">What Our Clients Say</h2>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-16 w-16 bg-gray-300 rounded-full mx-auto mb-6"></div>
-              <p className="text-gray-600 italic mb-6 text-lg">
-                "The MATANGI Food Connection team transformed our restaurant's online presence.
-                Their food photography and video content has helped us attract new customers
-                and keep our social media channels vibrant and engaging."
-              </p>
-              <div className="font-bold">Priya Sharma</div>
-              <p className="text-orange-700">Owner, Spice Garden Restaurant</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Call to Action */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-orange-700 mb-6">Ready to Elevate Your Food Business?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
-            Partner with us to create stunning food content that drives customer engagement and business growth.
-          </p>
-          <button className="bg-food hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Schedule a Tasting Session
-          </button>
-        </div>
-      </section> */}
 
       <Footer />
     </>

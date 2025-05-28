@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
-  Twitter,
   Youtube,
   Mail,
   Phone,
@@ -18,9 +17,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">MATANGI CONSULTANCY</h3>
-            {/* <p className="text-gray-300 mb-4">
-              A diversified business conglomerate with expertise across multiple industries.
-            </p> */}
+           
             <div className="flex space-x-4 mt-4">
               <a href="https://www.facebook.com/share/18jUrdViNR/" className="text-gray-300 hover:text-white">
                 <Facebook size={20} />
@@ -28,9 +25,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/matangi.consultancy?igsh=MXZmanAwZXMzaDZtaw==" className="text-gray-300 hover:text-white">
                 <Instagram size={20} />
               </a>
-              {/* <a href="#" className="text-gray-300 hover:text-white">
-                <Twitter size={20} />
-              </a> */}
+           
               <a href="https://www.youtube.com/@MatangiConsultancy" className="text-gray-300 hover:text-white">
                 <Youtube size={20} />
               </a>
@@ -84,29 +79,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Newsletter */}
-          {/* <div>
-            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
-            <p className="text-gray-300 mb-4">
-              Subscribe to our newsletter for the latest updates.
-            </p>
-            <form className="flex flex-col space-y-2">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-matangi-500"
-              />
-              <button
-                type="submit"
-                className="px-4 py-2 bg-matangi-600 hover:bg-matangi-700 rounded text-white font-medium transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div> */}
         </div>
-
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} MATANGI CONSULTANCY. All rights reserved.</p>
         </div>
